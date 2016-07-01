@@ -18,6 +18,7 @@ You are welcome to open issues to pose questions for clarification, discussion a
 
 * http://www.tutorialspoint.com/flask
 * https://www.ntu.edu.sg/home/ehchua/programming/webprogramming/Python3_Flask.html
+* http://getbootstrap.com/
 
 # Development
 
@@ -33,6 +34,7 @@ basic file structure:
 |   +-- templates
 |   |   + home.html
 |   +-- routes.py
++-- resources
 +-- .gitignore
 +-- README.md
 ```
@@ -40,6 +42,7 @@ basic file structure:
 * static file contains the css,images,scripts.
 * templates contain all the html files
 * routes.py is the basic route for the application
+* resources contain the images/pics and description of the layout
 
 `NOTE: THis is just the basic hierarchy. Needs to to updated depend on the requirement.`
 
