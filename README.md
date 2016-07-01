@@ -14,6 +14,11 @@ This site is developed using python flask and bootstrap framworks.
 
 You are welcome to open issues to pose questions for clarification, discussion and any related stuffs.
 
+#Resouces
+
+* http://www.tutorialspoint.com/flask
+* https://www.ntu.edu.sg/home/ehchua/programming/webprogramming/Python3_Flask.html
+
 # Development
 
 basic file structure:
