@@ -13,3 +13,32 @@ This site is developed using python flask and bootstrap framworks.
 * If you find no issues relevant to your work, do open a new issue.
 
 You are welcome to open issues to pose questions for clarification, discussion and any related stuffs.
+
+# Development
+
+basic file structure:
+``` ruby
+.
++-- app
+|   +-- static
+|   |   +-- css
+|   |   +-- images
+|   |   +-- js
+|   |   +-- jquey
+|   +-- templates
+|   |   +home.html
+|   +--routes.py
++-- .gitignore
++-- README.md
+```
+* app is the beginning of the flask application.
+* static file contains the css,images,scripts.
+* templates contain all the html files
+* routes.py is the basic route for the application
+
+`NOTE: THis is just the basic hierarchy. Needs to to updated depend on the requirement.`
+
+NOTICE: If there's any bug in this project, do file a issue with a description stating the problem and the location.
+
+
+
