@@ -31,8 +31,8 @@ basic file structure:
 |   |   +-- js
 |   |   +-- jquey
 |   +-- templates
-|   |   +home.html
-|   +--routes.py
+|   |   + home.html
+|   +-- routes.py
 +-- .gitignore
 +-- README.md
 ```
