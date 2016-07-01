@@ -19,6 +19,7 @@ You are welcome to open issues to pose questions for clarification, discussion a
 * http://www.tutorialspoint.com/flask
 * https://www.ntu.edu.sg/home/ehchua/programming/webprogramming/Python3_Flask.html
 * http://getbootstrap.com/
+* https://openoox.com/folder/shopping-themes
 
 # Development
 
