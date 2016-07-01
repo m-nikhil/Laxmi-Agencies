@@ -2,7 +2,7 @@
 
 Laxmi-Agencies is an official website to showcase the sales items.
 
-This site is developed using ruby-on-rails and bootstrap framworks.
+This site is developed using python flask and bootstrap framworks.
 
 # Contibution
 
