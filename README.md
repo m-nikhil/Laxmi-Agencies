@@ -14,7 +14,15 @@ This site is developed using python flask and bootstrap framworks.
 
 You are welcome to open issues to pose questions for clarification, discussion and any related stuffs.
 
-#Resouces
+#Deployment 
+
+* we are to deploy in the `openshift`.
+
+For deployment testing, create a "hello world" python flask and then configure the server and download the dependencies to host "hello world" site.
+
+`This takes place in 'hosting-test' branch.`
+
+#Resources
 
 * http://www.tutorialspoint.com/flask
 * https://www.ntu.edu.sg/home/ehchua/programming/webprogramming/Python3_Flask.html
