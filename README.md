@@ -1,3 +1,1 @@
-#How to view html?
-
-Go to `http://htmlpreview.github.com/` and paste the html file's location.
+open `https://htmlpreview.github.io/` and paste the file location 
