@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>call</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<p id="target">Hai</p>
+<button onclick="action()">click</button>
+<script type="text/javascript">
+	function action(){
+		$.ajax({
+			type: "GET",
+			url: "https://raw.githubusercontent.com/m-nikhil/js-test/gh-pages/text.txt",
+			success: function(data)
+			{
+				document.getElementById('target').innerHTML=data;
+			},
+			error: function()
+			{
+				document.getElementById('target').innerHTML="Failed";
+			}
+		});
+		
+	}
+</script>
+</body>
+</html>
