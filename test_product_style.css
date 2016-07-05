@@ -1,4 +1,4 @@
-/* Generated on: Mon Jul 04 2016 05:28:05 GMT+0000 (UTC) */
+/* Generated on: Mon Jul 04 2016 06:47:49 GMT+0000 (UTC) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -2424,7 +2424,7 @@ html.w-mod-js [data-ix="eased-dropdown"] {
 
 @media (max-width: 991px) {
     .hero-section {
-        height: 44vh;
+        height: 40vh;
     }
 
     .navlink {
@@ -2439,7 +2439,7 @@ html.w-mod-js [data-ix="eased-dropdown"] {
     }
 
     .imageslider {
-        height: 44vh;
+        height: 40vh;
     }
 
     .logo {
@@ -2457,9 +2457,49 @@ html.w-mod-js [data-ix="eased-dropdown"] {
         background-color: #fff;
     }
 
+    .left {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .right {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .headinglogo {
+        font-size: 24px;
+    }
+
     .navmenu {
         height: 177px;
         background-color: #fff;
+    }
+
+    .product-heading {
+        font-size: 24px;
+    }
+
+    .product-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .brand-heading {
+        font-size: 24px;
+    }
+
+    .brand-dropdown-title {
+        font-size: 15px;
+    }
+
+    .brand-dropdown-list {
+        margin-left: 26px;
+        font-size: 13px;
+    }
+
+    .brand-dropdown-icon {
+        font-size: 12px;
     }
 
     .dropdown-toggle {
@@ -2468,20 +2508,25 @@ html.w-mod-js [data-ix="eased-dropdown"] {
 }
 
 @media (max-width: 767px) {
+    .navbar {
+        height: 75px;
+    }
+
     .hero-section {
-        height: 34vh;
+        height: 30vh;
     }
 
     .navlink {
         height: 0;
-        padding-top: 19px;
+        margin-top: 23px;
+        padding-top: 0;
         padding-bottom: 0;
         padding-left: 30px;
         font-size: 13px;
     }
 
     .imageslider {
-        height: 34vh;
+        height: 30vh;
     }
 
     .logo {
@@ -2495,8 +2540,90 @@ html.w-mod-js [data-ix="eased-dropdown"] {
         font-size: 30px;
     }
 
+    .left {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .right {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .headinglogo {
+        font-size: 22px;
+    }
+
     .navmenu {
-        height: 106px;
+        height: 120px;
+        padding-top: 0;
+    }
+
+    .product-column {
+        margin-top: -38px;
+        margin-bottom: 21px;
+        padding: 0 21px;
+    }
+
+    .product-heading {
+        font-size: 22px;
+    }
+
+    .product-image {
+        width: 160px;
+        height: 160px;
+    }
+
+    .brand-heading {
+        font-size: 22px;
+    }
+
+    .brand-dropdown-title {
+        font-size: 13px;
+    }
+
+    .brand-dropdown-list {
+        position: relative;
+        display: inline-block;
+        overflow: visible;
+        width: 115px;
+        margin-bottom: 7px;
+        margin-left: -57px;
+        padding-top: 0;
+        padding-bottom: 4px;
+        padding-left: 26px;
+        float: none;
+        clear: none;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .dropdown-list.w--open {
+        padding-left: 72px;
+        float: none;
+    }
+
+    .brand-dropdown-icon {
+        font-size: 10px;
+    }
+
+    .dropdown-toggle {
+        margin-top: -27px;
+        float: none;
+    }
+
+    .column {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 }
 
@@ -2507,7 +2634,8 @@ html.w-mod-js [data-ix="eased-dropdown"] {
 
     .navlink {
         height: 0;
-        padding-top: 17px;
+        margin-top: 15px;
+        padding-top: 0;
         padding-bottom: 0;
         padding-left: 27px;
         font-size: 11px;
@@ -2535,7 +2663,87 @@ html.w-mod-js [data-ix="eased-dropdown"] {
         font-size: 30px;
     }
 
+    .left {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+
+    .right {
+        display: block;
+        margin-top: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .headinglogo {
+        font-size: 20px;
+    }
+
     .navmenu {
-        height: 91px;
+        height: 84px;
+    }
+
+    .middle {
+        margin-top: 0;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .product-column {
+        display: block;
+    }
+
+    .product-heading {
+        font-size: 20px;
+    }
+
+    .product-image-link {
+        width: 160px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .brand-heading {
+        font-size: 20px;
+    }
+
+    .brand-dropdown-title {
+        font-size: 11px;
+    }
+
+    .brand-dropdown-list {
+        padding-left: 67px;
+        font-size: 10px;
+    }
+
+    .dropdown-list.w--open {
+        padding-left: 0;
+    }
+
+    .brand-dropdown-icon {
+        font-size: 8px;
+    }
+
+    .column {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 }
