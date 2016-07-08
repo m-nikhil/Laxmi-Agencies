@@ -79,10 +79,11 @@
 
 </style>
 
-
 </head>
   <body>
     <!-- navbar-->
+
+<h2 id="loader_img"> loading </h2>
     <header class="header">
       <div class="topbar">
         <div class="container"> 
@@ -618,6 +619,15 @@
             
             
           });
+
+
+            $('#loader_img').show();
+
+      // main image loaded ?
+      $('img').on('load', function(){
+        // hide/remove the loading image
+     $('#loader_img').hide();
+    });
       
         </script>
 
