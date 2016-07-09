@@ -70,6 +70,7 @@
     margin: 10px;
     width: 90%;
     height: 90%;
+    background: url(spinner.gif) center no-repeat #fff;
 }
 
 </style>
@@ -83,7 +84,7 @@
         <div class="container"> 
           <div class="topbar__content row">
             
-            <div class="col-sm-2 topbar__logo"><a href="#"><img id="logo"  height="130px" alt="" class="topbar__logo__normal"><img id="logo" src="./product page static/logo.jpg" height="75px" alt="" class="topbar__logo__small"></a></div>
+           <div class="col-sm-2 topbar__logo"><a href="#"><img src="./product page static/logo.jpg" height="90px" alt="" class="topbar__logo__normal"><img src="./product page static/logo.jpg" height="75px" alt="" class="topbar__logo__small"></a></div>
             <div class="col-sm-offset-7 col-sm-3 hidden-xs">
               <form class="topbar__search">
                 <div class="input-group">
@@ -549,14 +550,16 @@
           function image_loader(row,column)
           {
               
-              var images = database[row][column]; 
+             var images = database[row][column]; 
                 
                 if(images[0])
                 {
+                $("#image1").hide();
                 var image_src = "./products/"+images[0];
                 downloadingImage1 = new Image();
                 downloadingImage1.onload = function(){
                        $("#image1").attr("src",downloadingImage1.src);
+                       $("#image1").show();
                 };             
                  downloadingImage1.src = image_src;
                   $images_parts = images[0].split("/");
@@ -575,10 +578,12 @@
                 
                 if(images[1])
                 {
+                $("#image2").hide();
                 var image_src = "./products/"+images[1];
                 downloadingImage2 = new Image();
                 downloadingImage2.onload = function(){
                        $("#image2").attr("src",downloadingImage2.src);
+                       $("#image2").show();
                 };             
                  downloadingImage2.src = image_src;
                   $images_parts = images[1].split("/");
@@ -597,10 +602,12 @@
                 
                 if(images[2])
                 {
+                $("#image3").hide();
                 var image_src = "./products/"+images[2];
                 downloadingImage3 = new Image();
                 downloadingImage3.onload = function(){
                        $("#image3").attr("src",downloadingImage3.src);
+                       $("#image3").show();
                 };             
                  downloadingImage3.src = image_src;
                   $images_parts = images[2].split("/");
@@ -619,10 +626,12 @@
                 
                 if(images[3])
                 {
+                $("#image4").hide();
                 var image_src = "./products/"+images[3];
                 downloadingImage4 = new Image();
                 downloadingImage4.onload = function(){
                        $("#image4").attr("src",downloadingImage4.src);
+                       $("#image4").show();
                 };             
                  downloadingImage4.src = image_src;
                   $images_parts = images[3].split("/");
@@ -641,10 +650,12 @@
                 
                 if(images[4])
                 {
+                $("#image5").hide();
                 var image_src = "./products/"+images[4];
                 downloadingImage5 = new Image();
                 downloadingImage5.onload = function(){
                        $("#image5").attr("src",downloadingImage5.src);
+                       $("#image5").show();
                 };             
                  downloadingImage5.src = image_src;
                   $images_parts = images[4].split("/");
@@ -663,10 +674,12 @@
                 
                 if(images[5])
                 {
+                $("#image6").hide();
                 var image_src = "./products/"+images[5];
                 downloadingImage6 = new Image();
                 downloadingImage6.onload = function(){
                        $("#image6").attr("src",downloadingImage6.src);
+                       $("#image6").show();
                 };             
                  downloadingImage6.src = image_src;
                   $images_parts = images[5].split("/");
@@ -685,10 +698,12 @@
                 
                 if(images[6])
                 {
+                $("#image7").hide();
                 var image_src = "./products/"+images[6];
                 downloadingImage7 = new Image();
                 downloadingImage7.onload = function(){
                        $("#image7").attr("src",downloadingImage7.src);
+                       $("#image7").show();
                 };             
                  downloadingImage7.src = image_src;
                   $images_parts = images[6].split("/");
@@ -707,10 +722,12 @@
                 
                 if(images[7])
                 {
+                $("#image8").hide();
                 var image_src = "./products/"+images[7];
                 downloadingImage8 = new Image();
                 downloadingImage8.onload = function(){
                        $("#image8").attr("src",downloadingImage8.src);
+                       $("#image8").show();
                 };             
                  downloadingImage8.src = image_src;
                   $images_parts = images[7].split("/");
@@ -729,10 +746,12 @@
                 
                 if(images[8])
                 {
+                $("#image9").hide();
                 var image_src = "./products/"+images[8];
                 downloadingImage9 = new Image();
                 downloadingImage9.onload = function(){
                        $("#image9").attr("src",downloadingImage9.src);
+                       $("#image9").show();
                 };             
                  downloadingImage9.src = image_src;
                   $images_parts = images[8].split("/");
@@ -744,6 +763,10 @@
                   $("#image9").attr("src","./products/empty.png");
                    $("#product9").text("");
                 } 
+
+
+
+          
 
 
 
