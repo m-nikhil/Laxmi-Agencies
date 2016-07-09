@@ -23,17 +23,12 @@
 
     <!-- favicon -->
 
-    <link rel="shortcut icon" href="./product page static/favicon.ico" />
+    <link rel="shortcut icon" href="./product page static/favicon.png" />
 
     <meta name="viewport" content="initial-scale=0.7, maximum-scale=1, user-scalable=0">
 
 
-<script type='text/javascript' src='loadImg.js'></script>
-<script type='text/javascript'>
-    $(function(){
-        $('img').imgPreload()
-    })
-</script>
+
   
 
   <style type="text/css">
@@ -83,7 +78,6 @@
   <body>
     <!-- navbar-->
 
-<h2 id="loader_img"> loading </h2>
     <header class="header">
       <div class="topbar">
         <div class="container"> 
@@ -524,6 +518,7 @@
     <!-- Pagination -->
     <script src="./product page static/jquery.bootpag.min.js"></script>
     
+
    
         <script type="text/javascript">
 
@@ -560,6 +555,7 @@
                 {
                 var image_src = "./products/"+images[i-1];
                 $("#image"+i).attr("src",image_src);
+
                   $images_parts = images[i-1].split("/");
                   $length = $images_parts.length;
                   $("#product"+i).text(($images_parts[$length-1]).substring(0,($images_parts[$length-1]).lastIndexOf(".")));
@@ -569,7 +565,6 @@
                   $("#image"+i).attr("src","./products/empty.png");
                    $("#product"+i).text("");
                 }
-
 
   
             };
@@ -616,18 +611,18 @@
             $clicked_product = (($this.attr('id')).split(" "))[1];
             $("#product_zoom").text($('#product'+$clicked_product).text());
             $("#image_zoom").attr('src',$("#image"+$clicked_product).attr('src'));
+
+
+
+
             
             
           });
 
 
-            $('#loader_img').show();
 
-      // main image loaded ?
-      $('img').on('load', function(){
-        // hide/remove the loading image
-     $('#loader_img').hide();
-    });
+
+
       
         </script>
 
