@@ -1929,17 +1929,18 @@ textarea.w-input,textarea.w-select {
     top: 0;
     right: 0;
     display: block;
-    height: 94px;
+    height: 115px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 0;
     padding-bottom: 0;
-    background-color: hsla(0,0%,100%,.82);
+    background-color: #eeeeee;
 }
 
 .hero-section {
     display: block;
-    height: 39vh;
+    height: 50vh;
+    margin-top: 1em;
     margin-right: auto;
     margin-bottom: 0;
     margin-left: auto;
@@ -1992,7 +1993,7 @@ textarea.w-input,textarea.w-select {
 }
 
 .imageslider {
-    height: 39vh;
+    height: 60vh;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -2051,6 +2052,7 @@ textarea.w-input,textarea.w-select {
 }
 
 .sectionbottom {
+    margin-top: 100px;
     margin-bottom: 0;
     padding-top: 39px;
     padding-bottom: 0;
@@ -2205,7 +2207,7 @@ textarea.w-input,textarea.w-select {
 
 .headinglogo {
     display: block;
-    margin: -19px auto 45px;
+    margin: 0px auto 45px;
     padding-top: 0;
     padding-bottom: 0;
     -webkit-box-pack: center;
