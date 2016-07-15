@@ -1961,6 +1961,7 @@ textarea.w-input,textarea.w-select {
 
 .navlink:hover {
     color: #006d94;
+    text-decoration: none;
 }
 
 .heroheading {

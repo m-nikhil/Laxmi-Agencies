@@ -10,6 +10,11 @@
     <!-- Bootstrap and Font Awesome css-->
     <!-- we use cdn but you can also include local files located in css directory-->
     <link href="./product page static/font-awesome.min.css" rel="stylesheet">
+
+    <link href=
+    "test_index_style.css"
+    rel="stylesheet" type="text/css">
+
     <link crossorigin="anonymous" href=
     "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     integrity=
@@ -56,7 +61,7 @@
         font-weight: 400;
         font-size: 2.5em;
         text-align: center;
-        margin: 1em 0 1em 0;
+        margin: .6em 0 .6em 0;
     }
 
     .p_contactus {
@@ -66,71 +71,35 @@
     }
 
     
+    hr {
+        width: 50%;
+    }
+
+    .navbar {
+      margin-top: 0;
+    }
 
     </style>
 </head>
 <body>
-    <!-- navbar-->
-    <header class="header">
-        <div class="topbar">
-            <div class="container">
-                <div class="topbar__content row">
-                    <div class="col-sm-2 topbar__logo">
-                        <a><img alt="" class="topbar__logo__normal" height=
-                        "90px" src=
-                        "./product%20page%20static/logo.jpg"><img alt="" class=
-                        "topbar__logo__small" height="75px" src=
-                        "./product%20page%20static/logo.jpg"></a>
-                    </div>
-                    <div class="col-sm-offset-7 col-sm-3 hidden-xs">
-                        <form class="topbar__search">
-                            <div class="input-group">
-                                <input class="form-control" placeholder=
-                                "SEARCH" type="text">
-                            </div>
-                        </form>
-                    </div>
-                </div>
+    <div class="navbar w-nav" data-animation="default" data-collapse="medium" data-contain="1" data-duration="400" data-easing="ease-in" data-easing2="ease-out">
+        <div class="nav-container w-container">
+            <a class="w-nav-brand" href="./home.html">
+                <img class="logo" src="images/laxmi_agencies-logo.png" width="149">
+            </a>
+            <nav class="navmenu w-nav-menu" role="navigation">
+                <a class="navlink w-nav-link" href="./home.html">Home</a>
+                <a class="navlink w-nav-link" href="./product page local json.html">Product</a>
+                <a class="navlink w-nav-link" href="./about.html">About</a>
+                <a class="navlink w-nav-link" href="./contact.html">Contact</a>
+            <div class="navbutton w-nav-button">
+                <div class="navbutton w-icon-nav-menu"></div>
             </div>
         </div>
-        <div class="navbar navbar-default" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button class="navbar-toggle btn btn-transparent"
-                    data-target=".collapsed-search" data-toggle="collapse"
-                    type="button"><i class="fa fa-search"></i><span class=
-                    "sr-only">Toggle navigation</span></button><a class=
-                    "navbar-toggle btn btn-transparent" href=
-                    "http://hunter.ondrejsvestka.cz/1-1/basket.html"><i class=
-                    "fa fa-shopping-cart"></i><span class="hidden-xs">3 Items
-                    in cart</span></a> <button class=
-                    "navbar-toggle btn btn-transparent" data-target=
-                    "#navigation" data-toggle="collapse" type=
-                    "button"><i class="fa fa-align-justify"></i><span class=
-                    "sr-only">Toggle navigation</span></button>
-                </div>
-                <div class="collapse navbar-collapse" id="navigation">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="./home.html">Home</a>
-                        </li>
-                        <li>
-                            <a  href="./product page local json.html">Product</a>
-                        </li>
-                        <li>
-                            <a  href="./about.html">About</a>
-                        </li>
-                        <li class="active">
-                            <a  href="./contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+    </div>
 
     <div class="about container">
-        <h1 class="h1_contactus">Contact Us</h1>
+        <hr><h1 class="h1_contactus">Contact Us</h1><hr>
         <p class="p_contactus">
             Office Address: Plot No. 4 & 5, Survey No. 6 & 7, Near Usha Company, Beside Kisan PVC Pipe Godown , Rasoolpura, Secunderabad – 500 003 Telangana.<br>
             <b>Landline</b>: (+91) 40 2790 1272<br>
