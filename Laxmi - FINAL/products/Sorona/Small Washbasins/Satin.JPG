@@ -1,0 +1,59 @@
+Neycer.png", "/Brands/RJI.JPG", "/Brands/Sonata.jpg", "/Brands/Sorona.png"]], "Bharat": [["/Brands/Bharat/Attic.png", "/Brands/Bharat/Cruze.png", "/Brands/Bharat/Cute.png", "/Brands/Bharat/Dolphin.png", "/Brands/Bharat/Dura.png", "/Brands/Bharat/Eco.png", "/Brands/Bharat/Mini Classic.png", "/Brands/Bharat/Polo.png", "/Brands/Bharat/Rubbic.png"], ["/Brands/Bharat/Vega.png"]], "Adson": [["/Brands/Adson/Diamond.png", "/Brands/Adson/Essential.png", "/Brands/Adson/Florenz.png", "/Brands/Adson/Nano.png", "/Brands/Adson/Swift.png"]], "Goeka": [["/Brands/Goeka/Allied Items.png", "/Brands/Goeka/Bathroom Sets.png", "/Brands/Goeka/Braided Connection Pipe.png", "/Brands/Goeka/Ceiling Rain Showers.png", "/Brands/Goeka/Fixing Solutions.png", "/Brands/Goeka/Glass Shelf.png", "/Brands/Goeka/Gratings.png", "/Brands/Goeka/Health Faucets.png", "/Brands/Goeka/LED and Multi Function Showers.png"], ["/Brands/Goeka/Rain Showers.png", "/Brands/Goeka/Shaving or Make up Mirrors.png", "/Brands/Goeka/Shower Arms.png", "/Brands/Goeka/Sink and Accessories.png", "/Brands/Goeka/Slim Showers.png", "/Brands/Goeka/Telephonic Hand Showers.png", "/Brands/Goeka/Ultra Slim Showers.png", "/Brands/Goeka/Unbreakable Accessories.png", "/Brands/Goeka/Waste Coupling.png"]], "Sorona": [["/Brands/Sorona/Lab Sinks.png", "/Brands/Sorona/One Piece Closets.png", "/Brands/Sorona/Small Washbasins.png", "/Brands/Sorona/Table Tops.png", "/Brands/Sorona/Traps.png", "/Brands/Sorona/Urinals.png", "/Brands/Sorona/Vitrossa Series.png", "/Brands/Sorona/Wall Hung Closet.png", "/Brands/Sorona/Wash Basin Set.png"], ["/Brands/Sorona/Water Closet.png"]]};
+
+
+
+          function image_loader(row,column)
+          {
+                          
+            
+            
+             if (black_list_navigation.indexOf(row) == -1)
+             {
+             var root = "./products/";
+             var images = database[row][column]; 
+             }
+             else
+             {
+             var root = "./navigation";
+             var images = navigation_database[row][column]; 
+             }
+
+
+
+                $('.image').css({"background": "url(spinner.gif) center no-repeat #fff"});
+                
+                if(images[0])
+                {
+                $("#image1").hide();
+                var image_src = root+images[0];
+                downloadingImage1 = new Image();
+                downloadingImage1.onload = function(){
+                       $("#image1").parent().parent().css({"background": "url() no-repeat"});
+                       $("#image1").attr("src",downloadingImage1.src);
+                       $("#image1").show();
+                };             
+                 downloadingImage1.src = image_src;
+                  $images_parts = images[0].split("/");
+                  $length = $images_parts.length;
+                  $("#product1").text(($images_parts[$length-1]).substring(0,($images_parts[$length-1]).lastIndexOf(".")));
+                }
+                else
+                {
+                  $("#image1").attr("src","./products/empty.png");
+                   $("#product1").text("");
+                } 
+
+
+
+           
+                
+                if(images[1])
+                {
+                $("#image2").hide();
+                var image_src = root+images[1];
+                downloadingImage2 = new Image();
+                downloadingImage2.onload = function(){
+                       $("#image2").parent().parent().css({"background": "url() no-repeat"});
+                       $("#image2").attr("src",downloadingImage2.src);
+                       $("#image2").show();
+            
