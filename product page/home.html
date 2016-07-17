@@ -8,10 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
 
-    <link href="test_index_style.css" rel="stylesheet" type="text/css">
-
     <!-- Bootstrap and Font Awesome css-->
-    <!-- we use cdn but you can also include local files located in css directory-->
     <link rel="stylesheet" href="./product page static/font-awesome.min.css">
     <link rel="stylesheet" href="./product page static/bootstrap.min.css">
 
@@ -50,32 +47,45 @@
     max-width:90%;
     max-height:90%;
     vertical-align: middle;
-    }
-
-    .navbar {
-      margin-top: 0;
-    }
+}
   </style>
 
 
 
 </head>
   <body>
-    <div class="navbar w-nav" data-animation="default" data-collapse="medium" data-contain="1" data-duration="400" data-easing="ease-in" data-easing2="ease-out">
-        <div class="nav-container w-container">
-            <a class="w-nav-brand" href="./home.html">
-                <img class="logo" src="laxmi_agencies-logo.png" width="149">
-            </a>
-            <nav class="navmenu w-nav-menu" role="navigation">
-                <a class="navlink w-nav-link" href="./home.html">Home</a>
-                <a class="navlink w-nav-link" href="./product page.html">Product</a>
-                <a class="navlink w-nav-link" href="./about.html">About</a>
-                <a class="navlink w-nav-link" href="./contact.html">Contact</a>
-            <div class="navbutton w-nav-button">
-                <div class="navbutton w-icon-nav-menu"></div>
+    <!-- navbar-->
+
+      <header class="header">
+      <div class="topbar">
+        <div class="container"> 
+          <div class="topbar__content row">
+            
+           <div class="col-sm-2 topbar__logo"><a><img src="./product page static/logo.png" height="90px" alt="" class="topbar__logo__normal"><img src="./product page static/logo.png" height="75px" alt="" class="topbar__logo__small"></a></div>
+  
+    	   <br>
+
+           <div class="col-sm-offset-5 col-sm-5 hidden-xs">
+              
+          
+            <div id="navigation">
+            <ul class="nav navbar-nav">
+              <li  class="active" ><a href="#" style="font-size: 19px"><strong>Home</strong></a></li>
+              <li><a href="./product page.html" style="font-size: 19px"><strong>Products</strong></a></li>
+              <li><a href="#" style="font-size: 19px"><strong>About</strong></a></li>
+              <li><a href="#" style="font-size: 19px"><strong>Contact</strong></a></li>
+            </ul>
+          </div>
+          
+
             </div>
+          </div>
+
         </div>
-    </div>
+      </div>
+      
+    </header>
+    <!-- /.navbar-->
 
 
     <header id="myCarousel" class="carousel slide">
